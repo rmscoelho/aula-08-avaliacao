@@ -6,27 +6,27 @@ export default class Database {
                 nome: "Maria Antonia",
                 username: "mant",
                 gn: "F",
-                tlf: "3519394459"
+                tlf: "351939445999"
             },
             {
                 id: 2,
                 nome: "Josefa Maria",
                 username: "josm",
-                gn: "f",
-                tlf: "3519394458"
+                gn: "F",
+                tlf: "351939445888"
             },
             {
                 id: 3,
                 nome: "Mario Joao",
                 username: "mj",
-                gn: "m",
-                tlf: "3519394456"
+                gn: "M",
+                tlf: "351939445666"
             }
         ];
     }
 
     get userData() {
-        return this._data;
+        return this._data = this.data;
     }
 
     set userData(userData) {

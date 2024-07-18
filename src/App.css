@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+form label{
+  width: 33%;
+  flex: 0 33%;
+}
+form label select{
+  width: 100%;
+}
+
+.add-data img{
+  filter: invert(1);
+}

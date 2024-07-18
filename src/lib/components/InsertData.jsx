@@ -4,10 +4,11 @@ import {isEmpty, validatePhone} from "../scripts/validateForm.js";
 export const InsertData = (props) => {
     let getDB = props.database;
     let setDB = props.setDB
+    let setModal = props.setModal;
 
     const [getName, setName] = useState('');
     const [getUser, setUser] = useState('');
-    const [getGender, setGender] = useState('');
+    const [getGender, setGender] = useState('M');
     const [getPhone, setPhone] = useState('');
 
     const addMember = (event) => {
@@ -27,8 +28,9 @@ export const InsertData = (props) => {
                 tlf: '351' + getPhone
             }]
         )
-    }
 
+        setModal(false)
+    }
 
     return (
         <>
@@ -46,9 +48,13 @@ export const InsertData = (props) => {
                 </label>
                 <br/>
                 <label>
-                    Gender
+                    Gender:
                     <br/>
-                    <input type="text" name="gender" value={getGender} onChange={e => setGender(e.target.value)}/>
+                    <select name="gender" defaultValue={getGender} onChange={e => setGender(e.target.value)}>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Other</option>
+                    </select>
                 </label>
                 <br/>
                 <label>
