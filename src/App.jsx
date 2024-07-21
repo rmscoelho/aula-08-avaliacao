@@ -18,8 +18,11 @@ function App() {
         <>
             <ListData database={getDB} setDB={setDB}/>
             <br/>
-            <button type="button" className="add-data" onClick={openModal}><img src={AddNew} alt="add a new person" width="20" height="20"/> </button>
-            <Modal database={getDB} setDB={setDB} modalOpen={modalOpen} setModal={setModal} editID="0" setID="" modalType="insert" />
+            <button type="button" className="add-data" onClick={openModal}>
+                <img src={AddNew} alt="add a new person" width="20" height="20"/>
+            </button>
+            <Modal database={getDB} setDB={setDB} modalOpen={modalOpen} setModal={setModal} editID="0" setID=""
+                   modalType="insert"/>
         </>
     )
 }

@@ -16,7 +16,6 @@ export const Modal = (props) => {
     }
 
     const confirmAction = () => {
-
         const newData = getDB.filter(person => person.id !== editID)
         setDB(newData)
         setModal(false)

@@ -29,7 +29,7 @@ export default class Database {
         return this._data = this.data;
     }
 
-    set userData(userData) {
+    set setData(userData) {
         this._data = userData;
     }
 

@@ -133,6 +133,7 @@ table tbody tr td.actions-column button img{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 4px;
     width: 100%;
 }
 
@@ -144,10 +145,26 @@ table tbody tr td.actions-column button img{
     height: 40px;
 }
 
+.modal .modal-content .modal-body form input{
+    width: 100%;
+}
+
 .modal .modal-content .modal-body .cancel-action {
     background: crimson;
 }
 
 .modal .modal-content .modal-body .confirm-action {
     background: forestgreen;
+}
+
+form label{
+    width: calc(33% - 8px);
+    flex: 0 calc(33% - 8px);
+}
+form label select{
+    width: 100%;
+}
+
+.add-data img{
+    filter: invert(1);
 }
